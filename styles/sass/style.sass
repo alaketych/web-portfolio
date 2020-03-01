@@ -1,0 +1,149 @@
+*, :after, :before
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0
+    padding: 0
+
+body
+    height: 100vh
+    font-family: 'Nunito'
+    background-image: url('../../images/parallax-background/moonlight.svg'), url('../../images/parallax-background/star.svg'), linear-gradient(#061e3a, #061220 75%, #020b16)
+    background-size: cover, cover
+    background-repeat: no-repeat, no-repeat
+    background-size: auto, auto
+    background-position: right center, right center
+    color: #ffffff
+
+.header
+    display: flex;
+    justify-content: space-between
+    top: 0;
+    left: 0;
+    padding: 40px 40px 0
+    width: 100%
+    color: #fff
+    z-index: 1000
+    font-size: 20px
+
+    a
+        color: #ffffff
+        font-size: 2rem;
+        letter-spacing: 0.1em
+        text-decoration: none
+        transition: 0.3s;
+        &:hover
+            color: #758394
+
+.wrap
+    display: flex
+    float: right
+    align-items: center
+
+.globa-nav__list
+    display: flex
+
+.global-nav__item
+    display: inline
+    margin-right: 1.5rem;
+
+.hamburger-menu
+    cursor: pointer
+    margin-left: 6rem
+    cursor: pointer
+
+.hamburger-menu__link
+    display: block;
+    width: 50px;
+    height: 4px;
+    margin-bottom: 10px;
+    position: relative;
+
+    background: #758394;
+    border-radius: 3px;
+
+    z-index: 1;
+
+    &:nth-last-child(2)
+        width: 35px
+    &:last-child
+        width: 45px
+
+main
+    display: flex
+    flex-direction: row
+
+    .fp-tableCell
+        display: flex
+
+    .side-navigation
+        position: relative
+        height: 100vh
+        width: 200px
+
+        .side-navigation__scroll-label
+            position: absolute
+            color: #ffffff
+            font-size: 10px
+            text-transform: uppercase
+            letter-spacing: 0.5em
+            bottom: 200px
+            left: -25px
+            transform: rotate(90deg)
+            &::before
+                content: ""
+                width: 10px
+                height: 10px
+
+    .section
+        display: flex
+        flex-direction: column
+
+        .description
+            display: flex
+            flex-direction: column
+            margin-top: 150px
+
+            h1
+                font-size: 75px
+                font-family: 'Montserrat'
+                color: #ff8000
+                text-transform: uppercase
+                margin-bottom: -35px
+
+                &:first-child
+                    color: #e3e3e3
+
+
+            h2
+                font-size: 30px
+                font-family: 'Quicksand'
+
+
+            .scene
+                position: fixed
+                left: 0
+                top: 0
+                bottom: 0
+                right: 0
+
+                h1
+                    position: absolute
+                    margin: 450px 0px 0px 950px
+                    text-transform: uppercase
+                    font-size: 60px
+                    font-family: 'Archivo Black'
+                    color: #ff8000
+                    text-shadow: 1px 1px 2px #061e3a;
+
+                .layer
+                    display: flex
+                    justify-content: center
+                    align-content: center
+                    align-items: center
+                    align-self: center
+                    position: absolute
+                    left: 20%
+                    float: right
+                    top: 0
+                    width: 100%
+                    height: 100vh

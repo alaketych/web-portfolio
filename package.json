@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "node-sass --watch scss -o css",
+    "gulp": "gulp"
+  },
+  "author": "alexandr laketych",
+  "license": "ISC",
+  "dependencies": {
+    "@barba/core": "^2.9.7",
+    "@fortawesome/fontawesome-free": "^5.12.1",
+    "aos": "^2.3.4",
+    "node-sass": "^4.13.1",
+    "parallaxify": "^0.1.1",
+    "typeit": "^6.5.1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
