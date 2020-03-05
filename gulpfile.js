@@ -16,7 +16,7 @@ gulp.task('sass', done => {
     done()
 })
 
-gulp.task('javascript', () => {
+gulp.task('js', () => {
     gulp.src('javascript/*.js')
         .pipe(browserSync.reload({ stream: true }))
 })
@@ -30,8 +30,9 @@ gulp.task('browser-sync', () => {
 })
 
 gulp.task('watch', () => {
-    gulp.watch('styles/sass/**/*.sass', gulp.parallel('sass'))
     gulp.watch('./*.html', gulp.parallel('html'))
+    gulp.watch('javascript/*.js', gulp.parallel('js'))
+    gulp.watch('styles/sass/**/*.sass', gulp.parallel('sass'))
 })
 
 gulp.task('default', gulp.parallel('browser-sync', 'watch'))
